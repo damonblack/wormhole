@@ -165,7 +165,8 @@ module.exports = {
         include: paths.appSrc,
         loader: require.resolve('babel-loader'),
         options: {
-          
+          presets: ['es2017'],
+          plugins: ['transform-decorators-legacy', 'transform-class-properties'],
           compact: true,
         },
       },

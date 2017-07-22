@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import { observable, autorunAsync, action, computed } from 'mobx';
 import { observer } from 'mobx-react';
 import { Graphics, Container, Sprite, Rectangle, autoDetectRenderer } from 'pixi.js';
-import { getWormholeSize } from './lib/utils';
+import { getWormholeSize } from '../lib/utils';
 import './Game.css';
-import wormholeImage from './logo.png';
-import starSystemImage from './star.png';
+import wormholeImage from '../logo.png';
+import starSystemImage from '../images/star.png';
 import bindAll from 'lodash.bindall';
 
 @observer
